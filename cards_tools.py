@@ -29,10 +29,10 @@ def new_card():
     print("新增名片")
 
     # 1、提示用户输入名片信息
-    name = raw_input("请输入姓名：")
-    phone = raw_input("请输入电话：")
+    name = input("请输入姓名：")
+    phone = input("请输入电话：")
     qq = input("请输入QQ：")
-    email = raw_input("请输入邮箱：")
+    email = input("请输入邮箱：")
 
     # 2、使用用户输入的信息建立一个名片字典
     card_dict = {"name": name, "phone": phone, "qq": qq, "email": email}
@@ -72,7 +72,7 @@ def search_card():
     print("-" * 50)
     print("搜索名片")
 
-    find_name = raw_input("请输入要搜索的姓名：")
+    find_name = input("请输入要搜索的姓名：")
     for card_dict in card_list:
         if card_dict["name"] == find_name:
             print("姓名：%s\t电话：%s\tQQ：%s\t\t邮箱%s" %

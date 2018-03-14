@@ -8,7 +8,7 @@ while True:
 
     cards_tools.show_menu()
 
-    action = input("请选择希望执行的操作：")
+    action = int(input("请选择希望执行的操作："))
     print("您选择的操作是【%s】" % action)
 
     if action in [1, 2, 3]:
